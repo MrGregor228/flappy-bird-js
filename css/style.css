@@ -64,7 +64,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 3, ../scss/style.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 7, ../scss/style.scss */
 canvas {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  transition: all .2s linear;
 }

@@ -1,4 +1,4 @@
-// 'use strict';
+
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
@@ -35,7 +35,7 @@ function moveUp() {
 let pipe = [];
 
 pipe[0] = {
-    x: canvas.width,
+    x: canvas.clientWidth,
     y: 0
 };
 
@@ -66,8 +66,8 @@ function draw() {
             score = 0;
             xPos = 10;
             yPos = 150; 
-            return;     
-
+            ctx.clear();
+            draw();
         }
 
         if (pipe[i].x == 5) {

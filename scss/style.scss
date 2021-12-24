@@ -1,6 +1,11 @@
 @import "compass/reset";
 
+body {
+    overflow: hidden;
+}
+
 canvas {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    transition: all .2s linear;
 }
